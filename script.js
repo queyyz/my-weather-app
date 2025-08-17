@@ -136,7 +136,6 @@ function displayWeather(data) {
     changeBackgroundByTime(timezone);
     changeBackgroundByTemperature(temp);
 
-    // ผูก event ให้ปุ่มหลังจากสร้าง DOM เสร็จ
     const forecastBtn = document.getElementById('forecast-btn');
     forecastBtn.addEventListener('click', () => {
         getForecast(name);
